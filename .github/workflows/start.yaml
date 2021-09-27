@@ -30,7 +30,7 @@ jobs:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
         uses: Ilshidur/action-discord@master
         with:
-          args: 'The project {{ EVENT_PAYLOAD.repository.full_name }} has been deployed.'
+          args: '안녕 GitHub Actions: {{ GITHUB_EVENT_NAME }}'
 
 
      
